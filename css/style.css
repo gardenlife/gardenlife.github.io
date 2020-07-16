@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Poppins:wght@600&display=swap');
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #B1D4AA;
+  height: 100%;
+}
+h1 {
+  font-family: 'Akronim', cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6em;
+  text-align: center;
+  color: SaddleBrown;
+  margin: 0;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  text-align: center;
+}
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div.container {
+  background-color: Cornsilk;
+  max-width: 650px;
+  height: 100%;
+  padding: 25px 25px;
+  margin: auto;
+}
