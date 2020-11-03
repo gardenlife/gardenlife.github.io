@@ -24,12 +24,25 @@
 		div#gameContainer canvas {
 			position: absolute;
 		}
+
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="gameContainer">
-		<canvas id="unity-canvas"></canvas>
+		<canvas id="unity-canvas" data-pixel-art=""></canvas>
 		<script src="Build/dev.loader.js"></script>
 		<script>
 			createUnityInstance(document.querySelector("#unity-canvas"), {
